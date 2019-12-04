@@ -14,3 +14,9 @@ npm install
 // run server
 node index.js
 ```
+
+fetching data:
+
+```
+url: http://localhost:8000/students
+```
