@@ -1,7 +1,8 @@
-var app = require('express')()
+var app = require('express')
 var cors = require('cors')
 var json = require('./students.json')
 var port = 8000
+app = app()
 app.use(cors())
 
 
