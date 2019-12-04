@@ -11,4 +11,7 @@ app.get('/students',(req,res)=>{
 })
 
 
-app.listen(port)
+app.listen(port,()=>{
+    console.log('server runnign at port',port)
+    console.log('use http://localhost:8000/students for the api call')
+})
