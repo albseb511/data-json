@@ -17,23 +17,30 @@ node index.js
 
 fetching data:
 
-```javascript
+```html
 url: http://localhost:8000/students
 
 // DO NOT MODIFY THE FILES
-
-// Create your project in a seperate folder
-// Add the following snippet to the top of your code
-// use the data variable to store info
+<!-- Use this in your project
+    click on show() to get the data
+    -->
+<html>
+<body>
+    <button onclick="show()">load</button>
+</body>
+<script>
     var data
     window.addEventListener('load',function(){
+        console.log('loading')
         var xhr = new XMLHttpRequest()
         xhr.open('GET','http://localhost:8000/students')
         xhr.onload = function(){
             data = xhr.response
+            console.log(data)
         }
-        
         xhr.send()
     })
+</script>
+</html>
 ```
 
