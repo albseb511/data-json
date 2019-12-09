@@ -20,6 +20,9 @@ fetching data:
 ```javascript
 url: http://localhost:8000/students
 
+// DO NOT MODIFY THE FILES
+
+// Create your project in a seperate folder
 // Add the following snippet to the top of your code
 // use the data variable to store info
     var data
